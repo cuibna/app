@@ -1,0 +1,78 @@
+.msgbox-masker{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background:rgba(0,0,0,.5);
+}
+.msgbox-masker .msgbox{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width:80%;
+	max-width: 640px;
+	background:#fff;
+	border-radius: .6rem;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.msgbox-masker .msgbox .content{
+	padding:1rem;
+	font-size: 1.4rem;
+	color: #333;
+	line-height: 3.3rem;
+	text-align: center;
+}
+.msgbox-masker .msgbox .btn-bar{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -o-flex;
+	display: flex;
+	box-sizing: border-box;
+}
+.msgbox-masker .msgbox .btn-bar span{
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	-webkit-flex:1;
+	-o-flex:1;
+	flex: 1;
+	font-size: 1.6rem;
+	color: #1f81c2;
+	line-height: 3.7rem;
+	text-align: center;
+	border-top:1px solid #ccc;
+	box-sizing: border-box;
+}
+.msgbox-masker .msgbox .btn-bar span.confirm{
+	position: relative;
+}
+.msgbox-masker .msgbox .btn-bar span:nth-child(2).confirm:before{
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 1px;
+	height: 100%;
+	background: #ccc;
+}
+/*toast-bar*/
+.toast-bar{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	min-width: 10rem;
+	padding:1rem;
+	font-size: 1.4rem;
+	color: #fff;
+	text-align: center;
+	background:rgba(0,0,0,.9);
+	border-radius: .4rem;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}

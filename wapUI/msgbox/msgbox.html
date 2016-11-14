@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="../../css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/msgbox.css">
+</head>
+<body>
+	<div id="aaa">
+		dkdkkdkdk
+	</div>
+	<script type="text/javascript" src="../../js/jquery.js"></script>
+	<script type="text/javascript" src="js/msgbox.js"></script>
+	<script type="text/javascript">
+		// 使用说明：
+		// 根据参数type的值出现不同的弹出层，
+		// 如果type为alert，cancel参数是一个function 则出现两个按钮的弹出框
+		// 如果type为toast，这是一个toast提示框，提示框根据用户传人的time参数关闭，没有则使用默认的3秒关闭提示框
+		// alert();
+		alert({
+			type:'alert',
+			content:'ddd',
+			cancel:function(){
+				$('#aaa').html('取消')
+			},
+			confirm:function(){
+				$('#aaa').html('确定')
+			},
+		});
+	</script>
+</body>
+</html>
